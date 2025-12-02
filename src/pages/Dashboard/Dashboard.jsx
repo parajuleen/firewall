@@ -308,13 +308,13 @@ export default function Dashboard() {
                         <p className="text-slate-600 mb-6 max-w-md mx-auto">
                             Complete your first lesson and quiz to see your scores here!
                         </p>
-                        <a
-                            href="/lessons"
+                        <Link
+                            to="/lessons"
                             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-sky-600 to-blue-600 text-white font-bold rounded-xl hover:from-sky-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                         >
                             <BookOpen className="w-5 h-5" />
                             Start Learning
-                        </a>
+                        </Link>
                     </div>
                 )}
             </div>

@@ -26,7 +26,7 @@ export default function Home() {
       description: "Test your knowledge with hands-on scenarios that mirror real-world challenges"
     },
     {
-      icon: <Award className="w-7 h-7" />,
+      icon: <Link ward className="w-7 h-7" />,
       title: "Track Progress",
       description: "Monitor your learning journey and earn achievements as you master new skills"
     }
@@ -35,7 +35,7 @@ export default function Home() {
   const stats = [
     { icon: <Users className="w-5 h-5" />, value: "10K+", label: "Active Learners" },
     { icon: <Clock className="w-5 h-5" />, value: "50+", label: "Hours Content" },
-    { icon: <Award className="w-5 h-5" />, value: "95%", label: "Success Rate" }
+    { icon: <Link ward className="w-5 h-5" />, value: "95%", label: "Success Rate" }
   ];
 
   const topics = [
@@ -90,19 +90,19 @@ export default function Home() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-                <a 
-                  href="/lessons" 
+                <Link  
+                  to="/lessons" 
                   className="group inline-flex items-center justify-center gap-3 px-10 py-5 bg-white text-sky-700 font-bold rounded-xl shadow-2xl hover:shadow-sky-500/50 hover:bg-sky-50 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
                 >
                   Start Learning 
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </a>
-                <a 
-                  href="/about" 
+                  <Link rrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link >
+                <Link  
+                  to="/about" 
                   className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white/10 backdrop-blur-md text-white font-bold rounded-xl border-2 border-white/40 hover:bg-white/20 transition-all duration-300 shadow-lg"
                 >
                   Learn More
-                </a>
+                </Link >
               </div>
 
               <div className="grid grid-cols-3 gap-6 pt-8 max-w-xl mx-auto lg:mx-0">
@@ -260,12 +260,12 @@ export default function Home() {
                         </div>
                       </div>
                     )}
-                    <a 
-                      href="/lessons" 
+                    <Link  
+                      to="/lessons" 
                       className="group/btn px-8 py-4 bg-gradient-to-r from-sky-600 to-blue-600 text-white font-bold rounded-xl hover:from-sky-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 whitespace-nowrap"
                     >
                       {topic.completed > 0 ? 'Continue' : 'Start Now'}
-                    </a>
+                    </Link >
                   </div>
                 </div>
               </div>
@@ -290,50 +290,50 @@ export default function Home() {
                 Empowering the next generation of cybersecurity professionals through accessible, engaging, and hands-on learning experiences.
               </p>
               <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors">
+                <Link  to="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors">
                   <span className="sr-only">Twitter</span>
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                </a>
-                <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors">
+                </Link >
+                <Link  to="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors">
                   <span className="sr-only">LinkedIn</span>
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
-                </a>
+                </Link >
               </div>
             </div>
             
             <div className="space-y-4">
               <h3 className="font-bold text-xl mb-6">Quick Links</h3>
               <ul className="space-y-3 text-slate-300">
-                <li><a href="/lessons" className="hover:text-sky-400 transition-colors inline-flex items-center gap-2 group">
-                  <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <li><Link  to="/lessons" className="hover:text-sky-400 transition-colors inline-flex items-center gap-2 group">
+                  <Link rrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                   Lessons
-                </a></li>
-                <li><a href="/about" className="hover:text-sky-400 transition-colors inline-flex items-center gap-2 group">
-                  <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link ></li>
+                <li><Link  to="/about" className="hover:text-sky-400 transition-colors inline-flex items-center gap-2 group">
+                  <Link rrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                   About Us
-                </a></li>
-                <li><a href="/contact" className="hover:text-sky-400 transition-colors inline-flex items-center gap-2 group">
-                  <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link ></li>
+                <li><Link  to="/contact" className="hover:text-sky-400 transition-colors inline-flex items-center gap-2 group">
+                  <Link rrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                   Contact
-                </a></li>
+                </Link ></li>
               </ul>
             </div>
             
             <div className="space-y-4">
               <h3 className="font-bold text-xl mb-6">Resources</h3>
               <ul className="space-y-3 text-slate-300">
-                <li><a href="/help" className="hover:text-sky-400 transition-colors inline-flex items-center gap-2 group">
-                  <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <li><Link  to="/help" className="hover:text-sky-400 transition-colors inline-flex items-center gap-2 group">
+                  <Link rrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                   Help Center
-                </a></li>
-                <li><a href="/faq" className="hover:text-sky-400 transition-colors inline-flex items-center gap-2 group">
-                  <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link ></li>
+                <li><Link  to="/faq" className="hover:text-sky-400 transition-colors inline-flex items-center gap-2 group">
+                  <Link rrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                   FAQ
-                </a></li>
-                <li><a href="/privacy" className="hover:text-sky-400 transition-colors inline-flex items-center gap-2 group">
-                  <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link ></li>
+                <li><Link  to="/privacy" className="hover:text-sky-400 transition-colors inline-flex items-center gap-2 group">
+                  <Link rrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                   Privacy Policy
-                </a></li>
+                </Link ></li>
               </ul>
             </div>
           </div>
@@ -343,9 +343,9 @@ export default function Home() {
               &copy; 2024 Firewall Academy. Built with accessibility and excellence in mind.
             </p>
             <div className="flex gap-6 text-sm text-slate-400">
-              <a href="/terms" className="hover:text-white transition-colors">Terms</a>
-              <a href="/privacy" className="hover:text-white transition-colors">Privacy</a>
-              <a href="/cookies" className="hover:text-white transition-colors">Cookies</a>
+              <Link  to="/terms" className="hover:text-white transition-colors">Terms</Link >
+              <Link  to="/privacy" className="hover:text-white transition-colors">Privacy</Link >
+              <Link  to="/cookies" className="hover:text-white transition-colors">Cookies</Link >
             </div>
           </div>
         </div>
