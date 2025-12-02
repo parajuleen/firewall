@@ -1,5 +1,5 @@
 import React from "react";           
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { ProgressProvider } from './context/progressContext.jsx';
 import Navigation from './components/navigation.jsx';
 
@@ -13,7 +13,7 @@ import Register from './pages/Auth/Register.jsx';
 export default function App() {
   return (
     <ProgressProvider>
-      <BrowserRouter basename="/firewall">
+      <HashRouter>
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-50 via-blue-50 to-sky-50">
           
           <Navigation />
@@ -30,7 +30,7 @@ export default function App() {
           </main>
 
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </ProgressProvider>
   );
 }
