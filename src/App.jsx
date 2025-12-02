@@ -13,7 +13,7 @@ import Register from './pages/Auth/Register.jsx';
 export default function App() {
   return (
     <ProgressProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/firewall">
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-50 via-blue-50 to-sky-50">
           
           <Navigation />
