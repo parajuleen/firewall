@@ -1,0 +1,60 @@
+# ------------------------------------
+# 1. DEPENDENCIES / BUILD OUTPUT
+# ------------------------------------
+# Node dependencies
+/node_modules
+# Yarn v2+
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Build output files
+/build
+/dist
+/out
+
+# Temporary files created by bundlers/tools
+.parcel-cache
+.cache
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ------------------------------------
+# 2. MISCELLANEOUS
+# ------------------------------------
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS and Editor generated files
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+.toolstemp
+
+# Jest/Cypress cache
+/coverage
+/.nyc_output
+.jest-cache
+.eslintcache
+
+# ------------------------------------
+# 3. ENVIRONMENT VARIABLES
+# ------------------------------------
+# Local environment variables should NEVER be committed
+# They often contain API keys, secrets, and database credentials.
+.env
+.env.*
+
+# ------------------------------------
+# 4. TESTING / TEMP FILES
+# ------------------------------------
+*.tsbuildinfo
+*.log
