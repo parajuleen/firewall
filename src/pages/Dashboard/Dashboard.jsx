@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Award, TrendingUp, Target, Star, BookOpen, CheckCircle, Clock, Trophy, Zap, ArrowRight, Shield } from 'lucide-react'; // Added ArrowRight and Shield
 import { useProgress } from '../../context/progressContext';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate ,Link} from 'react-router-dom'
+
 
 export default function Dashboard() {
     // Hooks and Context

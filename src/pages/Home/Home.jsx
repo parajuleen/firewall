@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Shield, Target, BookOpen, Award, ArrowRight, CheckCircle, Lock, Zap, TrendingUp, Users, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const [summary, setSummary] = useState({ completed: 0, total: 10 });
