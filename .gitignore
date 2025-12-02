@@ -12,7 +12,6 @@
 
 # Build output files
 /build
-/dist
 /out
 
 # Temporary files created by bundlers/tools
